@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+ <title>Gallery</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="http://saigonhairsalon.com/SaigonhairGalleryStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+<header>
+  <div class="left">
+    <a href="http://saigonhairsalon.com/home.html">SaiGonHairSalon</a>
+  </div>
+  <div class="right">
+    <ul>
+      <li><a href="http://saigonhairsalon.com/SaigonhairGallery.html">GALLERY</a></li>
+      <li><a href="http://saigonhairsalon.com/SaigonhairServices.html">SERVICES</a></li>
+    </ul>
+   </div>
+</header>
+
+<div class="linebetween">
+  <div class="diamond">
+  </div>
+</div>
+
+<div class="intro">
+  <center><h>Check out our work</h></center>
+</div>
+
+<body>
+
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="http://saigonhairsalon.com/gallery1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="http://saigonhairsalon.com/gallery2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="http://saigonhairsalon.com/gallery3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="http://saigonhairsalon.com/gallery4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="http://saigonhairsalon.com/gallery5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="http://saigonhairsalon.com/gallery6.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<div class="linebetween">
+  <div class="diamond">
+  </div>
+</div>
+
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="http://saigonhairsalon.com/gallery11.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="http://saigonhairsalon.com/gallery7.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="http://saigonhairsalon.com/gallery8.jpg" style="width:100%">
+  </div>
+ 
+  <div class="mySlides2">
+    <img src="http://saigonhairsalon.com/gallery9.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="http://saigonhairsalon.com/gallery10.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="http://saigonhairsalon.com/gallery12.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+
+<div class="footer">
+  <center><h>Copyright &#169; SaiGonHairSalon</h></center>
+</div>
+
+</html>

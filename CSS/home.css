@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  
+  header{
+    width: 100%;
+    min-height: 300px;
+    background-color: black;
+  }
+  
+  .left {
+    margin-left: 40px;
+    margin-top: 130px;
+    float: left;
+  }
+  
+  .left a{
+    color: white;
+    font-size: 60px;
+    text-decoration: none; 
+    font-family: san-serif;  
+  }
+  
+  .right {
+    margin-right: 40px;
+    float: right;
+    margin-top: 130px;
+  }
+   
+  div.right ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 35px;
+    padding: 20px;
+    font-family: san-serif;
+    font-weight: bold;   
+  }
+  
+  div.right ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+  div.right ul li a:hover{
+    color: #9933ff;
+  }
+  
+  @media screen and (max-width: 768px) {
+      
+      .line {
+          width: 30px;
+          height: 3px;
+          background: white;
+          margin: 5px;
+      }
+      
+      .right2 {
+          position: absolute;
+          cursor: pointer;
+          right: 5%;
+          top: 50%;
+          transform: translate(-5%, -50%);
+      }
+      
+      .right {
+          position: fixed;
+          height: 100vh;
+          width: 100%;
+          flex-direction: column;
+          display: none;
+      }
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  .bodypic {
+    position: relative;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 0 50px;
+  }
+  
+  .row1 {
+    margin: 0px 50px;
+    margin-bottom: 120px;
+  }
+  
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: 100px;
+    height: 250px;
+  }
+  
+  .card h {
+    font-size: 50px;
+    font-family: "Great Vibes", cursive;
+    color: black;
+  }
+  
+  .card p {
+    font-size: 25px;
+    font-family: "Great Vibes", cursive;
+    color: black;
+    margin-top: 20px;
+  }
+  
+  
+  .fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: black;
+    color: white;
+  }
+  
+  
+  .contact {
+    margin-top: 120px;
+  }
+  
+  .contact h {
+    font-size: 50px;
+    font-family: 'Rouge Script', cursive;
+    color: white;
+    margin-top: 100px;
+  }
+  
+  .contact p {
+    font-size: 25px;
+    font-family: "Libre Baskerville", serif;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .map {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .footer {
+    height: 100px;
+  }
+  
+  .footer h {
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-size: 20px;
+  }

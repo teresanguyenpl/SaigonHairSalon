@@ -3,21 +3,22 @@
     padding: 0px;
     box-sizing: border-box;
   }
-  
-  
-  header{
-    width: 100%;
-    min-height: 300px;
+
+  body {
     background-color: black;
+  }
+
+  .top {
+    position: relative;
+    margin-top: 8rem;
   }
   
   .left {
-    margin-left: 40px;
-    margin-top: 130px;
+    margin-left: 2rem;
     float: left;
   }
   
-  .left a{
+  .left a {
     color: white;
     font-size: 60px;
     text-decoration: none; 
@@ -25,81 +26,46 @@
   }
   
   .right {
-    margin-right: 40px;
+    margin-right: 2rem;
     float: right;
-    margin-top: 130px;
   }
    
-  div.right ul li {
+  .right ul li {
     list-style-type: none;
     display: inline-block;
     font-size: 35px;
     padding: 20px;
     font-family: san-serif;
-    font-weight: bold;   
+    font-weight: 100;   
   }
   
-  div.right ul li a {
+  .right ul li a {
     text-decoration: none;
     color: white;
     display: block;
   }
   
-  div.right ul li a:hover{
+  .right ul li a:hover{
     color: #9933ff;
   }
   
-  @media screen and (max-width: 768px) {
-      
-      .line {
-          width: 30px;
-          height: 3px;
-          background: white;
-          margin: 5px;
-      }
-      
-      .right2 {
-          position: absolute;
-          cursor: pointer;
-          right: 5%;
-          top: 50%;
-          transform: translate(-5%, -50%);
-      }
-      
-      .right {
-          position: fixed;
-          height: 100vh;
-          width: 100%;
-          flex-direction: column;
-          display: none;
-      }
-  }
-  
-  body {
-    background-color: black;
-  }
-  
   .bodypic {
-    position: relative;
-    text-align: center;
+      position: absolute;
+      margin-top: 10rem;
   }
   
-  * {
-    box-sizing: border-box;
-  }
-  
-  .column1 {
+  .column {
     float: left;
     width: 50%;
     padding: 0 50px;
   }
   
-  .row1 {
+  .row {
     margin: 0px 50px;
     margin-bottom: 120px;
   }
   
-  .row1:after {
+  .row:after {
     content: "";
     display: table;
     clear: both;
@@ -179,4 +145,42 @@
     color: white;
     font-family: "Libre Baskerville", serif;
     font-size: 20px;
+  }
+
+/* Phone */
+
+@media screen and (max-width: 768px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    
+    .right2 {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+    }
+    
+    .right {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+
+    .left a {
+        font-size: 40px; 
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .left a {
+        font-size: 50px; 
+    }
   }

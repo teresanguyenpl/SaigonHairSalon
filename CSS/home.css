@@ -1,6 +1,4 @@
 *{
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
   }
 
@@ -9,79 +7,69 @@
   }
 
   .top {
-    position: relative;
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
   
   .left {
-    margin-left: 2rem;
+    margin-left: 1rem;
     float: left;
   }
   
   .left a {
     color: white;
-    font-size: 60px;
+    font-size: 5vw;
     text-decoration: none; 
-    font-family: san-serif;  
+    font-family: 'Rouge Script', cursive; 
+  }
+
+  .left a:hover {
+      color: #eadebe;
   }
   
   .right {
-    margin-right: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 100;  
+    font-size: 3vw;
+    width: 40%;
     float: right;
   }
-   
-  .right ul li {
-    list-style-type: none;
-    display: inline-block;
-    font-size: 35px;
-    padding: 20px;
-    font-family: san-serif;
-    font-weight: 100;   
-  }
   
-  .right ul li a {
+  .right a {
     text-decoration: none;
     color: white;
-    display: block;
+  }
+   
+  
+  .right a:hover{
+    color: #eadebe;
   }
   
-  .right ul li a:hover{
-    color: #9933ff;
+  .body-pic {
+      background-color: #9933ff;
+      margin-top: 5rem;
   }
-  
-  .bodypic {
-      position: absolute;
-      margin-top: 10rem;
+
+  .row {
+    margin-top: 8rem;
   }
   
   .column {
     float: left;
     width: 50%;
-    padding: 0 50px;
-  }
-  
-  .row {
-    margin: 0px 50px;
-    margin-bottom: 120px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+    padding: 0 2rem;
   }
   
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
+    padding: 0.5rem;
     text-align: center;
     background-color: #f1f1f1;
-    margin-top: 100px;
-    height: 250px;
+    height: 33vh;
   }
   
   .card h {
-    font-size: 50px;
+    font-size: 4.5vw;
     font-family: "Great Vibes", cursive;
     color: black;
   }
@@ -89,98 +77,110 @@
   .card p {
     font-size: 25px;
     font-family: "Great Vibes", cursive;
-    color: black;
-    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.616);
   }
-  
   
   .fa {
     padding: 20px;
-    font-size: 50px;
     width: 50px;
     text-align: center;
     text-decoration: none;
     margin: 10px 2px;
     border-radius: 50%;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
     background: black;
     color: white;
   }
   
-  
+  .fa:hover {
+      background-color: #c0ab71;
+      color: black;
+  }
+
   .contact {
-    margin-top: 120px;
+    position: absolute;
+    margin-top: 26rem;
+    text-align: center;
+    width: 100%;
   }
   
   .contact h {
-    font-size: 50px;
+    font-size: 5vw;
     font-family: 'Rouge Script', cursive;
     color: white;
-    margin-top: 100px;
   }
   
   .contact p {
-    font-size: 25px;
+    font-size: 3vw;
     font-family: "Libre Baskerville", serif;
     color: white;
-    margin-top: 20px;
   }
   
   .map {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    position: relative;
+    margin-top: 60rem;
+    margin-bottom: 10rem;
   }
-  
-  .footer {
-    height: 100px;
+
+  .map iframe {
+      height: 80vh;
+      margin-bottom: 10rem;
   }
-  
-  .footer h {
+
+  .map h {
     color: white;
     font-family: "Libre Baskerville", serif;
-    font-size: 20px;
+    font-size: 2vw;
+    margin-bottom: 7rem;
   }
 
-/* Phone */
 
-@media screen and (max-width: 768px) {
-    .line {
-        width: 30px;
-        height: 3px;
-        background: white;
-        margin: 5px;
-    }
-    
-    .right2 {
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-    }
-    
+@media screen and (max-width: 1024px) {
     .right {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        display: none;
+        margin-top: 1.5rem;
     }
-
-    .left a {
-        font-size: 40px; 
+    .map {
+        margin-top: 54rem;
+        margin-bottom: 5rem;
+    }
+    .map iframe {
+        height: 60vh;
+        margin-bottom: 5rem;
+    }
+} 
+@media screen and (max-width: 750px) {
+    .top {
+        margin-top: 3rem;
+    }
+    .right {
+        margin-top: 1rem;
+    }
+    .body-pic {
+        margin-top: 4rem;
+    }
+    .row {
+        margin-top: 5rem;
+    }
+    .card {
+        height: 28vh;
+    }
+    .card p {
+        font-size: 20px;
+    }
+    .contact {
+        margin-top: 20rem;
+    }
+    .map {
+        margin-top: 38rem;
+        height: 10vh;
+        margin-bottom: 25rem;
+    }
+    .map iframe {
+        height: 37vh;
+    }
+    .map h {
+        font-size: 3vw;
     }
 }
 
-/* Tablet */
-@media screen and (max-width: 1024px) {
-    .left a {
-        font-size: 50px; 
-    }
-  }
+
+

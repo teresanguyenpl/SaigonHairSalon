@@ -1,126 +1,112 @@
 *{
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
-  }
-  
-  
-  header{
-    width: 100%;
-    min-height: 150px;
-    background-color: black;
-  }
-  
-  div.left {
-    margin-left: 40px;
-    float: left;
-    margin-top: 40px;
-  }
-  .left a{
-    color: white;
-    font-size: 40px;
-    text-decoration: none; 
-    font-family: 'Rouge Script', cursive;  
-  }
-  
-  div.right {
-    margin-right: 40px;
-    float: right;
-    margin-top: 25px;
-  }
-   
-  div.right ul li {
-    list-style-type: none;
-    display: inline-block;
-    font-size: 25px;
-    padding: 10px;
-    font-family: san-serif;
-    font-weight: bold;   
-  }
-  
-  div.right ul li a {
-    margin-top: 25px;
-    text-decoration: none;
-    color: white;
-    display: block;
-  }
-  
-  div.right ul li a:hover{
-    color: #9933ff;
   }
   
   body {
     background-color: black;
   }
-  
-  .bodypic1 {
-    margin-top: 50px;
-    margin-bottom: 100px;
+
+  .top {
+    margin-top: 5rem;
   }
   
-  * {
-    box-sizing: border-box;
+  .left {
+    margin-left: 1rem;
+    float: left;
+  }
+  
+  .left a {
+    color: white;
+    font-size: 5vw;
+    text-decoration: none; 
+    font-family: 'Rouge Script', cursive; 
+  }
+
+  .left a:hover {
+      color: #eadebe;
+  }
+  
+  .right {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 100;  
+    font-size: 3vw;
+    width: 40%;
+    float: right;
+  }
+  
+  .right a {
+    text-decoration: none;
+    color: white;
+  }
+   
+  .right a:hover{
+    color: #eadebe;
+  }
+  
+  .bodypic1 {
+    margin-top: 5rem;
+  }
+
+  .row1 {
+    margin-top: 7rem;
   }
   
   .column1 {
     float: left;
     width: 50%;
-    padding: 10px;
-    height: 10s00px; 
+    padding: 1rem;
   }
   
   .column1 h {
     font-family: 'Rouge Script', cursive;
     color: white;
-    font-size: 90px;
-    color: #dcccff;
-  }
-  
-  .row1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .row1a:after {
-    content: "";
-    display: table;
-    clear: both;
+    font-size: 6vw;
+    color: #eadebe;
   }
   
   .column1a {
     float: left;
     width: 75%;
-    padding: 10px;
-    height: 700px; 
   }
   
   .column1a p {
     font-family: "Libre Baskerville", serif;
     color: white;
-    font-size: 25px;
-    margin-left: 60px;
+    font-size: 2vw;
+    margin-left: 1rem;
   }
   
   .column1b {
     float: left;
     width: 25%;
-    padding: 10px;
-    height: 700px; 
   }
   
   .column1b p {
     font-family: "Libre Baskerville", serif;
     color: white;
-    font-size: 25px;
+    font-size: 2vw;
+    text-align: center;
   }
-  
-  .footer {
-    height: 100px;
-  }
-  
-  .footer h {
-    color: white;
-    font-family: "Libre Baskerville", serif;
-    font-size: 20px;
-  }
+
+
+@media screen and (max-width: 1024px) {
+    .right {
+        margin-top: 1.5rem;
+    }
+} 
+@media screen and (max-width: 750px) {
+    .top {
+        margin-top: 3rem;
+    }
+    .right {
+        margin-top: 1rem;
+    }
+    .bodypic1 {
+        margin-top: 4rem;
+    }
+    .row1 {
+        margin-top: 4rem;
+    }
+}

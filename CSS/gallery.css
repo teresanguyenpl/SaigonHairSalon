@@ -41,25 +41,21 @@
     color: white;
   }
    
-  
   .right a:hover{
     color: #eadebe;
   }
   
   .linebetween {
-    height: 45px;
     width: 100%;
-    position: relative;
   }
   
   .linebetween::after, .linebetween::before {
     content:'';
     position: absolute;
-    margin: auto;
     height: 2px;
     background: #666666;
     width: 45%;
-    top: 45%
+    top: 17rem;
   }
   
   .linebetween::after {
@@ -71,52 +67,51 @@
   }
   
   .diamond {
+    position: relative;
     height: 40px;
     width: 40px;
     border: 2px solid #666666;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     margin: auto;
-    transform: rotate(45deg)
+    transform: rotate(45deg);
+    top: 11rem;
   }
   
   .intro {
-    margin-top: 90px;
+    text-align: center;
+    position: relative;
+    margin-top: 17rem;
   }
   
   .intro h {
     font-family: "Great Vibes", cursive; 
-    font-size: 90px;
-    color: #dcccff;
+    font-size: 6vw;
+    color: #eadebe;
   }
   
   body {
     background-color: black;
   }
   
-  * {box-sizing: border-box}
-  .mySlides1, .mySlides2 {display: none}
+  .mySlides1 {
+      display: none
+    }
+
   img {vertical-align: middle;}
   
-  /* Slideshow container */
   .slideshow-container {
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
-    margin: auto;
-    margin-bottom: 120px;
-    margin-top: 120px;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    padding: 0 3rem 0 3rem;
   }
   
-  /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     padding: 16px;
-    margin-top: -22px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -124,32 +119,46 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
-  
-  /* Position the "next button" to the right */
+
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+      left: 0;
   }
   
-  /* On hover, add a grey background color */
   .prev:hover, .next:hover {
     background-color: #f1f1f1;
     color: black;
   }
   
   .footer {
-    height: 100px;
+    margin-bottom: 3rem;
   }
   
   .footer h {
     color: white;
     font-family: "Libre Baskerville", serif;
-    font-size: 20px;
+    font-size: 2vw;
   }
 
   @media screen and (max-width: 1024px) {
     .right {
         margin-top: 1.5rem;
+    }
+    .linebetween::before, .linebetween::after {
+        top: 14rem;
+    }
+    .diamond {
+        top: 8rem;
+    }
+    .intro {
+        margin-top: 14rem;
+    }
+    .slideshow-container {
+        margin-top: 5rem;
+        margin-bottom: 7rem;
     }
 } 
 @media screen and (max-width: 750px) {
@@ -158,5 +167,29 @@
     }
     .right {
         margin-top: 1rem;
+    }
+    .linebetween::before, .linebetween::after {
+        top: 9rem;
+    }
+    .diamond {
+        width: 30px;
+        height: 30px;
+        top: 5rem;
+    }
+    .intro {
+        margin-top: 9rem;
+    }
+    .slideshow-container {
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
+    .prev, .next {
+        padding: 10px;
+    }
+    .prev {
+        left: 0.5rem;
+    }
+    .next {
+        right: 0.5rem;
     }
 }

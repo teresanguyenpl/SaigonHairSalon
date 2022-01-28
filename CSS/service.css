@@ -58,6 +58,9 @@
     margin-bottom: 100px;
   }
   
+  * {
+    box-sizing: border-box;
+  }
   
   .column1 {
     float: left;
@@ -121,4 +124,3 @@
     font-family: "Libre Baskerville", serif;
     font-size: 20px;
   }
-  

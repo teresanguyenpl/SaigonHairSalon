@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+  }
+
+  .top {
+    margin-top: 5rem;
+  }
+  
+  .left {
+    margin-left: 1rem;
+    float: left;
+  }
+  
+  .left a {
+    color: white;
+    font-size: 5vw;
+    text-decoration: none; 
+    font-family: 'Rouge Script', cursive; 
+  }
+
+  .left a:hover {
+      color: #eadebe;
+  }
+  
+  .right {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 100;  
+    font-size: 3vw;
+    width: 40%;
+    float: right;
+  }
+  
+  .right a {
+    text-decoration: none;
+    color: white;
+  }
+   
+  
+  .right a:hover{
+    color: #eadebe;
+  }
+  
+  .linebetween {
+    height: 45px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .linebetween::after, .linebetween::before {
+    content:'';
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: #666666;
+    width: 45%;
+    top: 45%
+  }
+  
+  .linebetween::after {
+    left:0
+  }
+  
+  .linebetween::before {
+    right:0
+  }
+  
+  .diamond {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #666666;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(45deg)
+  }
+  
+  .intro {
+    margin-top: 90px;
+  }
+  
+  .intro h {
+    font-family: "Great Vibes", cursive; 
+    font-size: 90px;
+    color: #dcccff;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  * {box-sizing: border-box}
+  .mySlides1, .mySlides2 {display: none}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 120px;
+    margin-top: 120px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .footer {
+    height: 100px;
+  }
+  
+  .footer h {
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .right {
+        margin-top: 1.5rem;
+    }
+} 
+@media screen and (max-width: 750px) {
+    .top {
+        margin-top: 3rem;
+    }
+    .right {
+        margin-top: 1rem;
+    }
+}

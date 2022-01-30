@@ -19,11 +19,11 @@
     color: white;
     font-size: 5vw;
     text-decoration: none; 
-    font-family: 'Rouge Script', cursive; 
+    color: #eadebe
   }
 
   .left a:hover {
-      color: #eadebe;
+      color: white;
   }
   
   .right {
@@ -61,26 +61,23 @@
   }
   
   .card {
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: center;
     background-color: #f1f1f1;
-    height: 33vh;
   }
   
   .card h {
     font-size: 4.5vw;
-    font-family: "Great Vibes", cursive;
     color: black;
   }
   
   .card p {
     font-size: 25px;
-    font-family: "Great Vibes", cursive;
     color: rgba(0, 0, 0, 0.616);
   }
   
   .fa {
-    padding: 20px;
+    padding: 1rem;
     width: 50px;
     text-align: center;
     text-decoration: none;
@@ -104,7 +101,6 @@
   
   .contact h {
     font-size: 5vw;
-    font-family: 'Rouge Script', cursive;
     color: white;
   }
   
@@ -134,7 +130,7 @@
 
 @media screen and (max-width: 1024px) {
     .right {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
     }
     .map {
         margin-top: 54rem;
@@ -150,16 +146,13 @@
         margin-top: 3rem;
     }
     .right {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     .body-pic {
         margin-top: 4rem;
     }
     .row {
         margin-top: 5rem;
-    }
-    .card {
-        height: 28vh;
     }
     .card p {
         font-size: 20px;
@@ -178,6 +171,26 @@
     .map h {
         font-size: 3vw;
     }
+}
+
+@media screen and (max-width: 450px) {
+  .contact {
+    margin-top: 17rem;
+  }
+  .map {
+    margin-top: 35rem;
+    margin-bottom: 23rem;
+  }
+  .map iframe {
+    height: 35vh;
+  }
+  .card p {
+    font-size: 15px;
+  }
+  .fa {
+    padding: 0.8rem;
+    width: 35px;
+  }
 }
 
 

@@ -18,12 +18,12 @@
   .left a {
     color: white;
     font-size: 5vw;
-    text-decoration: none; 
-    font-family: 'Rouge Script', cursive; 
+    text-decoration: none;
+    color: #eadebe;
   }
 
   .left a:hover {
-      color: #eadebe;
+      color: white;
   }
   
   .right {
@@ -93,15 +93,16 @@
 
 @media screen and (max-width: 1024px) {
     .right {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
     }
 } 
+
 @media screen and (max-width: 750px) {
     .top {
         margin-top: 3rem;
     }
     .right {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     .bodypic1 {
         margin-top: 4rem;
@@ -109,4 +110,14 @@
     .row1 {
         margin-top: 4rem;
     }
+    .column1 {
+      width: 100%;
+    }
+    .column1a p {
+      font-size: 3.5vw;
+    }
+    .column1b p {
+      font-size: 3.5vw;
+    }
 }
+
